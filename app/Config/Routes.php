@@ -5,6 +5,6 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->setAutoRoute(false);
 $routes->get('/', 'Home::index');
-
-$routes->match(['get','post'],'/admin', 'Admin\Auth::login');
+$routes->get('/admin','Admin\Auth::login');

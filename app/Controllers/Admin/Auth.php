@@ -70,7 +70,7 @@ class Auth extends BaseController
                 // print_r($user_info);exit;
             }
         }
-        return view('Auth/login', $data);
+         return view('Auth/login');
     }
     public function logout(){
         if(session()->has('userlogin')){
